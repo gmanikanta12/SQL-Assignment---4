@@ -1,0 +1,14 @@
+SQL Assignment - 4 
+
+1. fetch query to replace 'a' with 'A' from firstname
+
+   SELECT REPLACE("FIRSTNAME",'a','A')
+
+2. print all worker details from worker table order by first name ascending and epartment descending
+   
+   SELCT * FROM WORKER 
+   ORDER BY FIRST_NAME , DEPARTMENT DESC 
+
+3. find the names of workers who earn the highest salary.
+
+   SELECT W.NAME FROM WORKER WHERE SALARY = (SELECT MAX(SALARY) FROM WORKER)
